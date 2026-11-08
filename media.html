@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ICC - Media and Info</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link rel="stylesheet" href="media.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-sm navbar-light sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">ICC</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="media.html">Media</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <h1>Media and Info</h1>
+
+  <div class="container">
+
+    <div class="box">
+      <h2>Our Team</h2>
+      <img class="team-photo" src="group-photo.JPG" alt="ICC team photo">
+      <p>
+        This is the ICC team at one of our conferences. We work together
+        to plan every event, from choosing committees to hosting delegates.
+        This text goes around the picture because the picture uses float.
+      </p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="box">
+          <h2>Video</h2>
+          <video class="w-100" controls>
+            <source src="video-icc.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="box">
+          <h2>Audio</h2>
+          <audio class="w-100" controls>
+            <source src="voice-faa.mp3" type="audio/mpeg">
+            Your browser does not support the audio tag.
+          </audio>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="box">
+          <h2>Committees we run</h2>
+          <ul>
+            <li>UNHRC</li>
+            <li>UNSC</li>
+            <li>Crisis Committee</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="box">
+          <h2>How to join</h2>
+          <ol>
+            <li>Register on our website</li>
+            <li>Get your country allocation</li>
+            <li>Write your position paper</li>
+            <li>Attend the conference</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <h2>Conference Schedule</h2>
+      <!-- change these rows to your real events -->
+      <div class="table-box">
+        <table class="table table-bordered">
+          <tr>
+            <th>Event</th>
+            <th>Committee</th>
+            <th>Date</th>
+            <th>Venue</th>
+          </tr>
+          <tr>
+            <td>ICC MUN</td>
+            <td>UNHRC</td>
+            <td>To be announced</td>
+            <td>UCP</td>
+          </tr>
+          <tr>
+            <td>ICC MUN</td>
+            <td>Crisis Committee</td>
+            <td>To be announced</td>
+            <td>UCP</td>
+          </tr>
+          <tr>
+            <td>Training Session</td>
+            <td>All</td>
+            <td>To be announced</td>
+            <td>UCP</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>ICC MUN Society, University of Central Punjab</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
