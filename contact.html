@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ICC - Contact</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-sm navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">ICC</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="media.html">Media</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="header text-center">
+    <h1>Contact Us</h1>
+    <p id="tagline">Mulk Qoum Apniyat</p>
+  </div>
+
+  <div class="container content">
+
+    <h2>About Us</h2>
+    <div class="about">
+      <div class="about-text">
+        <p>
+          <span class="highlight">ICC</span> stands for International Crisis Chamber.
+          It is the Model United Nations society of <b>UCP</b>.
+          We organize our own MUNs and conferences.
+        </p>
+        <p>
+          We also send our students to take part as delegates in
+          <i>MUNs at other institutes</i>.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="images/members-session.jpg" alt="ICC members at a session">
+      </div>
+    </div>
+
+    <h2>Contact Us</h2>
+    <div class="contact-area">
+
+      <div class="form-box">
+        <form id="contact-form" action="#" method="post">
+          <div class="form-grid">
+            <div>
+              <label for="fullname">Your Name</label>
+              <input type="text" id="fullname" name="fullname" required minlength="3">
+            </div>
+            <div>
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" required>
+            <p id="email-note" class="note"></p>
+            </div>
+            <div class="full">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject">
+            </div>
+            <div class="full">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" maxlength="200" required></textarea>
+            <p class="char-count"><span id="char-count">0</span> / 200 characters</p>
+            </div>
+            <div class="full">
+              <button type="submit" class="send-button">Send Message</button>
+            </div>
+          </div>
+        </form>
+        <div id="success-box" class="success hidden">Thank you! Your message has been sent.</div>
+      </div>
+
+      <div class="info-box">
+        <h3>Visit Us</h3>
+        <p>Avenue 1 Khayaban-e-Jinnah, Johar Town, Lahore, Punjab, Pakistan</p>
+        <h3>Society</h3>
+        <p>ICC MUN Society, University of Central Punjab</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>ICC MUN Society, University of Central Punjab</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>
