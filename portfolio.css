@@ -1,0 +1,167 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #eaf3ff;
+  color: #0a2a5e;
+}
+
+h1 {
+  font-size: 42px;
+  color: white;
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+#tagline {
+  font-size: 22px;
+  font-style: italic;
+  color: #cfe3ff;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 28px;
+  color: #0b4db3;
+  border-bottom: 2px solid #0b4db3;
+}
+
+.header {
+  background: linear-gradient(#0b4db3, #1e7be0);
+  padding: 30px;
+}
+
+.navbar {
+  background-color: #0b4db3;
+}
+
+.navbar .nav-link:hover {
+  background-color: white;
+  color: #0b4db3;
+}
+
+.navbar .active {
+  border-bottom: 2px solid white;
+}
+
+.content {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: white;
+  border: 3px solid #0b4db3;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+figure {
+  margin: 20px 0px;
+}
+
+figure img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border: 3px solid #0b4db3;
+}
+
+figcaption {
+  padding: 5px;
+  font-size: 14px;
+  text-align: center;
+  color: #0a2a5e;
+}
+
+.footer {
+  padding: 5px;
+  text-align: center;
+  color: white;
+  background-color: #0b4db3;
+}
+
+.mosaic {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "big top"
+    "big bottom";
+  gap: 15px;
+}
+
+.m-big {
+  grid-area: big;
+}
+
+.m-top {
+  grid-area: top;
+}
+
+.m-bottom {
+  grid-area: bottom;
+}
+
+.mosaic figure {
+  margin: 0px;
+}
+
+.m-big img {
+  height: 440px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.gallery figure {
+  margin: 0px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+figure {
+  animation: fade-in 1s ease;
+}
+
+#tagline {
+  animation: fade-in 2s ease;
+}
+
+@media (max-width: 768px) {
+  .mosaic {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "big big"
+      "top bottom";
+  }
+
+  .m-big img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mosaic {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "big"
+      "top"
+      "bottom";
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
