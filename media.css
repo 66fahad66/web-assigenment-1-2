@@ -25,22 +25,17 @@ h2 {
 
 
 .navbar {
-  background-color: white;
-  border-bottom: 3px solid #0b4db3;
+  background-color: #08357f;
 }
-
-
 
 .navbar .nav-link {
   display: inline-block;
-  color: #0b4db3;
   padding: 8px 14px;
-  border-radius: 20px;
 }
 
 .navbar .nav-link:hover {
-  background-color: #0b4db3;
-  color: white;
+  background-color: white;
+  color: #08357f;
 }
 
 
@@ -84,3 +79,4 @@ th {
   text-align: center;
   padding: 5px;
 }
+
